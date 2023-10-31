@@ -65,6 +65,9 @@ public class StringUtilities {
      */
     public static Character getMiddleCharacter(String inputValue){
         // ask about this one : is floor correct, or ceiling?
+        if(inputValue.length() % 2 == 0){
+            return inputValue.charAt(inputValue.length() / 2 - 1);
+        }
         return inputValue.charAt(inputValue.length() / 2);
     }
 
